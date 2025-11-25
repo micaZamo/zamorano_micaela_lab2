@@ -3,29 +3,34 @@
 
 Este proyecto implementa un sistema de recomendación secuencial basado en Decision Transformer, junto con múltiples baselines, evaluación y experimentos de return-conditioning.
 
-📁 Estructura del repositorio
+## 📁 Estructura del repositorio 
+```  markdown
 ├── src/
 │   ├── models/
-│   │   └── decision_transformer.py
-│   │   └── baselines.py
+│   │   ├── decision_transformer.py
+│   │   ├── baselines.py
+│   │   └── __init__.py
 │   ├── data/
-│   │   └── dataset.py
-│   │   └── data_preprocessing.py
-│   └── training/
-│   │   └── trainer.py
+│   │   ├── dataset.py
+│   │   ├── data_preprocessing.py
+│   │   └── __init__.py
+│   ├── training/
+│   │   ├── trainer.py
+│   │   └── __init__.py
 │   └── evaluation/
-│   │   └── evaluate.py
-│   │   └── metrics.py
+│       ├── evaluate.py
+│       ├── metrics.py
+│       └── __init__.py
 │
 ├── data/
 │   ├── processed/
 │   │   └── trajectories_train.pkl
-│   └── test_users/
+│   ├── test_users/
 │   │   └── netflix8_test.json
-│   └── train/
+│   ├── train/
 │   │   └── netflix8_train.df
 │   └── groups/
-│   │   └── mu_netflix8.csv
+│       └── mu_netflix8.csv
 │
 ├── notebooks/
 │   ├── exploracion_preparacion.ipynb
@@ -36,6 +41,7 @@ Este proyecto implementa un sistema de recomendación secuencial basado en Decis
 ├── REPORTE.pdf
 ├── requirements.txt
 └── README.md
+```  
 
 ## 🚀 Cómo correr el proyecto
 
